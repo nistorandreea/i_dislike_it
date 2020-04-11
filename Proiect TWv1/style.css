@@ -131,6 +131,31 @@
     cursor: pointer;
     margin: 12px 0;
 }
+* {
+  box-sizing: border-box;
+}
+
+/* Style the search field */
+form.example input[type=text] {
+  padding: 12px;
+  font-size: 12px;
+  float: left;
+  width: 80%;
+  background: #f1f1f1;
+}
+
+/* Style the submit button */
+form.example button {
+  float: left;
+  width: 20%;
+  padding: 10px;
+  background: white;
+  color: black;
+  font-size: 20px;
+  border: 0px;
+
+  cursor: pointer;
+}
 
 /*-------Alimente---*/
 
