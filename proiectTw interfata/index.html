@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>I dislike it!</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
+<link rel="icon" href="logo_title.png" type="image/icon type">
+</head>
+<body>
+
+<!-- Header -->
+<div class="header">
+    <img src="logo.png" alt="Logo site">
+  <p>Singurul site de recenzii negative.</p>
+</div>
+
+
+<!-- The flexible grid (content) -->
+<div class="row">
+  <div class="side">
+      <input type="text" name="search" placeholder="Search..">
+      <nav class="navigation">
+  <ul class="mainmenu">
+    <li><a href="index.html">Acasa</a></li>
+    <li><a href="CategoriiObb.html">Categorii obiecte</a>
+      <ul class="submenu">
+        <li><a href="Alimente.html">Alimente</a></li>
+        <li><a href="Curatenie.html">Produse de curatenie</a></li>
+        <li><a href="Electronice.html">Electronice &amp; Electrocasnice</a></li>
+        <li><a href="Imbracaminte.html">Imbracaminte &amp; Incaltaminte</a></li>
+        <li><a href="Cosmetice.html">Cosmetice</a></li>
+        <li><a href="Mobila.html">Mobila &amp; accesorii</a></li>
+        <li><a href="Jucarii.html">Jucarii</a></li>
+      </ul>
+         <li><a href="CategoriiServ.html">Categorii servicii</a>
+      <ul class="submenu">
+        <li><a href="Inchirieri.html">Inchirieri</a></li>
+        <li><a href="Jocuri.html">Jocuri</a></li>
+        <li><a href="LocuriMunca.html">Locuri de munca</a></li>
+        <li><a href="ServiciiAuto.html">Servicii auto</a></li>
+        <li><a href="ServiciiWeb.html">Servicii web</a></li>
+        <li><a href="Educatie.html">Educatie</a></li>
+      </ul>
+             <li><a href="">Clasamente</a>
+      <ul class="submenu">
+        <li><a href="General.html">General</a></li>
+        <li><a href="CatObb.html">Categorii obiecte</a></li>
+        <li><a href="CatServ.html">Categorii servicii</a></li>
+        <li><a href="Individual.html">Individual</a></li>
+      </ul>
+    </li>
+    <li><a href="Contact.html">Contact</a></li>
+    <li><a href="Login.html">Login / Creare cont</a></li>
+    <li><a href="Review.html">Lasa un review</a></li>
+  </ul>
+</nav>
+    </div>
+  <div class="main">
+
+<div class="slideshow-container" align="center">
+
+<div class="mySlides fade">
+  <img src="image1.png" style="width:50%" alt="Image 1">
+</div>
+
+<div class="mySlides fade">
+  <img src="image2.png" style="width:50%" alt="Image 2">
+</div>
+
+<div class="mySlides fade">
+  <img src="image3.png" style="width:50%" alt="Image 3">
+</div>
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+    <h2>Despre noi</h2>
+      <p> Pentru ca exista multe produse supra evaluate, am creat acest site pentru ca persoanele care au achizitionat un produs si nu au fost multumit de el din cauza calitatii, a raportului pret/calitate sau din alte motive, sa poata lasa o recenzie negativa. De asemenea, avem si o rubrica de "Top produse" pentru a va arata si produse care isi merita locul in topul preferintelor voastre. Tot ce trebuie sa faci este sa iti creezi un cont si poti lasa o recenzie. </p>
+  </div>
+</div>
+
+<!-- Footer -->
+<div class="footer">
+  <p>&copy; 2020 I dislike it!<p>
+</div>
+ 
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
+</body>
+</html>
